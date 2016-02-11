@@ -1,0 +1,4 @@
+coverage
+django=={{ docs_version }}
+django-debug-toolbar
+selenium
