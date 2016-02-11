@@ -6,7 +6,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 sys.path.insert(0, os.path.dirname(BASE_DIR))  # add our app to path
 
-SECRET_KEY = '{{ secret_key }}'
+SECRET_KEY = '!@rf6@w&uz5b#8hk_^@b2fr^t163el(@0uf!xahiuc@k13hfru'
 DEBUG = True
 ALLOWED_HOSTS = []
 
@@ -93,4 +93,8 @@ USE_L10N = True
 USE_TZ = True
 
 STATIC_URL = '/static/'
+MEDIA_URL = '/media/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
