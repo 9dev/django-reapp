@@ -20,6 +20,8 @@ INSTALLED_APPS = [
 
     'debug_toolbar',
     'main',
+
+    '$APP_SAFE_NAME$',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -57,17 +59,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
-CACHES = {
-    'default': {
-        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
-        'LOCATION': os.path.join(BASE_DIR, 'cache/default/'),
-    },
-    'ranking': {
-        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
-        'LOCATION': os.path.join(BASE_DIR, 'cache/ranking/'),
     }
 }
 
