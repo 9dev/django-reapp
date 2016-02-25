@@ -1,0 +1,11 @@
+include LICENSE
+include README.md
+recursive-include {{ safe_app_name }}/static *
+recursive-include {{ safe_app_name }}/templates *
+recursive-include {{ safe_app_name }}/templatetags *
+recursive-include {{ safe_app_name }}/management *
+recursive-include {{ safe_app_name }}/fixtures *
+recursive-include {{ safe_app_name }}/resources *
+recursive-include {{ safe_app_name }}/migrations *
+global-exclude *pyc
+global-exclude ~*
